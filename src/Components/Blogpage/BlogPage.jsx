@@ -1,6 +1,7 @@
 // BlogPage.js
 
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './BlogPage.css';
 import { Col, Row, Button } from 'react-bootstrap';
 import {Typography } from '@mui/material'
@@ -201,12 +202,13 @@ const BlogPage = () => {
                 <span style={{ fontFamily: 'comfortaa', fontWeight: '500' }}>By {item.author}</span>
               </Typography>
               <div className="desc-options mt-3">
+              <Link to="/blogpost1">
                 <Button
                   className='readblog'
                   style={{ borderRadius: '20px', border: '1px solid black', color: 'black', backgroundColor: '#DDECFF' }}
                 >
                   READ MORE
-                </Button>
+                </Button></Link>
                 {item.isLiked ? (
                   <Favorite style={{ color: 'red' }} onClick={() => handleLike(item.id)} />
                 ) : (

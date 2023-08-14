@@ -1,0 +1,194 @@
+/* default code for mobile first view*/
+
+/*setting base font and color for all blogposts */
+.content {
+    font-size: 1rem;
+    color: #4F5F56;
+}
+
+.bg {
+    padding-top: 4rem;
+
+}
+
+
+.imgbp1 {
+    margin-top: 2rem;
+    display: block;
+    width: 100%;
+    height: 40%;
+}
+
+.content h1 {
+    color: blue;
+}
+
+.content .desc {
+    position: relative;
+}
+
+
+.content .desc::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    height: 80%;
+    border-left: 0.2rem solid #0448BC;
+
+}
+
+.content .desc {
+    color: #2E2727;
+    background: #EEEEEE;
+    padding: 2rem 1rem 2rem 2rem;
+    height: auto;
+
+}
+
+
+
+
+/* styling for About Us */
+
+.aboutus1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #EEEEEE;
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+
+.aboutus1 h2,
+.aboutus1 header {
+    color: blue;
+}
+
+
+.aboutus1 p,
+.aboutus1 h4 {
+    padding-top: 1rem;
+}
+
+
+
+.aboutus1 header {
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    font-weight: 500;
+
+}
+
+.aboutus1 button {
+    background: lightgreen;
+    border-width: 0;
+    border-radius: 3rem;
+    padding: 0.2rem 2rem;
+    margin: 0.5rem 1rem;
+}
+
+
+.aboutform .p2 {
+    margin: 0;
+}
+
+
+
+/* Styling for the social media icons */
+.socialIcon1 {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcon1 a {
+    padding: 0.5rem 0.8rem;
+}
+
+.socialIcon1 i{
+color: #2E2727;
+
+}
+
+
+
+.row2 li {
+    font-size: 1.5rem;
+    padding-top: 0.3rem;
+}
+
+.row2 p {
+    padding-top: 0.5rem;
+
+}
+
+.row2 h2 {
+    font-size:2.3rem;
+    color: green;
+    margin-top:2rem;
+    padding:2rem 0 0.5rem;
+}
+
+.row3{
+    background: #CBF5E6;
+}
+
+.row3 p{
+    background: #CBF5E6 !important;
+margin-left:1rem;
+padding:2.5rem !important;
+}
+
+.row3 .opinion{
+    background: green;
+    padding:3rem;
+    text-align: center;
+}
+
+.row3 button{
+    background: blue;
+    margin-top:1rem;
+    padding:0.3rem 3rem;
+    border-width: 0;
+    border-radius: 3rem;
+}
+
+
+/* media query for larger screens */
+@media only screen and (min-width:768px) {
+
+
+    /* Adjusting image description left border */
+    .content .desc::before {
+
+        left: 1rem;
+        top: 2rem;
+        height: 70%;
+        padding-left: 4rem;
+
+    }
+
+    .content .desc {
+
+        padding: 2rem 1rem 2rem 4rem;
+
+    }
+    .row3 p{
+    margin-left:3rem;
+    max-width:47rem;
+    }
+
+
+
+}
+
+@media only screen and (min-width:995px) {
+
+
+
+    /* About us styles */
+
+    .aboutus1 {
+        margin-top: 8rem;
+        margin-left: 1rem;
+    }
+}

@@ -18,6 +18,7 @@ import FoodtypePage from './Components/Foodtypepage/FoodtypePage';
 import Donationdetailsformpage from './Components/Donationdetailsformpage/Donationdetailsformpage';
 import FoodworrierHome from './Components/Foodworrierpage/FoodworrierHome';
 import BlogPage from './Components/Blogpage/BlogPage';
+import BlogPost1 from './Components/BlogPosts/BlogPost1/BlogPost1';
 import ContactUs from './Components/ContactUsPage/ContactUs';
 import Main from './Components/Terms conditions/Main/Main';
 import Thankupage1 from './Components/Thankupage1/Thankupage1';
@@ -54,6 +55,7 @@ function App() {
           <Route path= '/donationdetailsform' element={<Donationdetailsformpage/>}/>
           <Route path= '/foodworrierpage' element={<FoodworrierHome/>}/>
           <Route path= '/blogpage' element={<BlogPage/>}/>
+          <Route path= '/blogpost1' element={<BlogPost1/>}/>
           <Route path= '/contactpage' element={<ContactUs/>}/>
           <Route path= '/terms and conditionspage' element={<Main/>}/>
           {/* this below thankyou page connectd to contactpage */}
